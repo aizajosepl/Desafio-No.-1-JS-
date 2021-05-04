@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desafio 1</title>
+	<style type="text/css">
+	.calculos{
+	 	background: #c7502c;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 20px;
+	}
+	h1{
+	 	text-align: center;
+	 	color: #ed3f13;
+	}
+	.center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 25%;
+	}
+	#centeruno{
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		width: 45%;
+		border-image-width: 50%;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Javascript</h1>
+		<h1>DESAFIO 1</h1>
+	</header>
+	<article>
+		<img src="Arco.jpg"  class="center">
+		<img src="Enunciado.jpg"  id="centeruno">
+		<script type="text/javascript">
+			var a=prompt("Introducir valor de a")
+			var b=prompt("Introducir valor de b")
+			var auno=Math.pow(b,2)+(16*Math.pow(a,2))
+			var ados=Math.sqrt(auno)
+			var atres=1/2*ados
+			var buno=(4*a)+ados
+			var bdos=buno/b
+			var btres=Math.log(bdos)
+			var cuno=Math.pow(b,2)/(8*a)
+			var cdos=cuno*btres
+			var total=atres+cdos
+			document.write("<div class=calculos> Para a = "+a+"<br></div>")
+			document.write("<div class=calculos> Para b = "+b+"<br></div>")
+			document.write("<div class=calculos> El resultado es: "+total+"</div>")
+		</script>
+	</article>
+</body>
+</html>
